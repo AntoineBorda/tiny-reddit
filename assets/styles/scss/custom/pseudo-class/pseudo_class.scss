@@ -1,0 +1,43 @@
+.pc-dw {
+    color: $dark;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.pc-dd {
+    color: $dark;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+.pc-wp {
+    color: $white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+.pc-pw {
+    color: $primary;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,51 @@
+{# HEADER #}
+<div class="container mt-6">
+	<div
+		class="row">
+		{# LEFT #}
+		<div class="col-md-4">
+			<h5 class="text-uppercase text-primary fw-bold">{{ 'header.subtitle'|trans({}, 'proposal') }}</h5>
+			<h2 class="text-uppercase fw-bold">{{ 'header.title'|trans({}, 'proposal') }}</h2>
+		</div>
+
+		{# RIGHT #}
+		<div class="col-md-8 fs-sm">
+
+			<p>{{ 'header.p1'|trans({}, 'proposal') }}</p>
+			<p>{{ 'header.p2'|trans({}, 'proposal') }}</p>
+
+			<div class="collapse" id="collapseExample">
+
+				<p>{{ 'header.p3'|trans({}, 'proposal') }}</p>
+				<p>{{ 'header.p4'|trans({}, 'proposal') }}</p>
+				<p>{{ 'header.p5'|trans({}, 'proposal') }}</p>
+			</div>
+
+			<p class="d-inline-flex gap-1">
+				<a class="btn btn-primary btn-xs" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					{{ 'header.read_more'|trans({}, 'proposal') }}
+				</a>
+			</p>
+
+		</div>
+	</div>
+</div>
+
+{# SEARCH #}
+<div class="row align-items-center mt-6">
+	<div class="col-auto">
+		{% include('pages/app/proposal/components/_search.html.twig') %}
+	</div>
+</div>
+
+{# PROPOSAL #}
+{% for expression in expressions %}
+	<div class="card card-row border border-primary mb-6 mt-6 p-6">
+		{% include('pages/app/proposal/components/_proposal.html.twig') %}
+	</div>
+{% endfor %}
+
+{# PAGINATION #}
+<div class="navigation d-flex justify-content-center mb-4">
+	{{ knp_pagination_render(expressions) }}
+</div>

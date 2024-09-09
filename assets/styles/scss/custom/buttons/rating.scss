@@ -1,0 +1,27 @@
+@mixin buttonStyles($bgColor, $borderColor, $textColor) {
+    background-color: $bgColor;
+    border-color: $borderColor;
+    color: $textColor;
+}
+
+.btn {
+    &.btn-outline-rating-up {
+        @include buttonStyles($dark, $success, $success);
+
+        &:hover,
+        &:active {
+            @include buttonStyles($success, $success, $dark);
+        }
+
+    }
+
+    &.btn-outline-rating-down {
+        @include buttonStyles($dark, $danger, $danger);
+
+        &:hover,
+        &:active {
+            @include buttonStyles($danger, $danger, $dark);
+        }
+
+    }
+}

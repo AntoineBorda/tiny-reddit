@@ -1,0 +1,21 @@
+{% extends 'base/base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	- Se connecter
+{% endblock %}
+
+{% block body %}
+
+	{# CONTENT #}
+	<section class="pt-6 pt-md-6">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 mx-auto">
+					{% include 'pages/security/authentification/login/content.html.twig' with {'last_username': last_username, 'error': error} %}
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

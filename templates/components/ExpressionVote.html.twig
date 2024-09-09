@@ -1,0 +1,37 @@
+<div {{ attributes }}>
+
+	<div class="d-flex align-items-center justify-content-center">
+
+		{% if voteMessageSuccess %}
+
+			<div class="alert alert-success mt-2 mb-2">
+				Merci pour ton vote !
+			</div>
+
+		{% elseif voteMessageDanger %}
+
+			<div class="alert alert-danger mt-2 mb-2">
+				Tu as déjà voté.
+			</div>
+
+		{% else %}
+
+			<button type="button" class="btn btn-sm btn-outline-rating-up me-2" data-action="live#action" data-action-name="upvote" data-expression-id="{{ expressionId }}">
+				<i class="fa-solid fa-up-long fa-2x"></i>
+			</button>
+			<button type="button" class="btn btn-sm btn-outline-rating-down" data-action="live#action" data-action-name="downvote" data-expression-id="{{ expressionId }}">
+				<i class="fa-solid fa-down-long fa-2x"></i>
+			</button>
+
+		{% endif %}
+
+		<div class="fw-bold ms-4">
+			SCORE :
+			<span class="text-success">{{ expression.upvote|default(0) }}</span>
+			/
+			<span class="text-danger">{{ expression.downvote|default(0) }}</span>
+		</div>
+
+	</div>
+
+</div>

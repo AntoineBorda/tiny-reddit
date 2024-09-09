@@ -1,0 +1,20 @@
+{# TOP #}
+<h2 class="mb-0 fw-bold text-center">
+	Reinitisaliser votre mot de passe
+</h2>
+<p class="mb-6 text-center">
+	Entrer votre adresse email, et nous vous enverrons un lien pour réinitialiser votre mot de passe.
+</p>
+
+{# FORM #}
+{{ form_start(requestForm) }}
+<div class="form-group">
+	{{ form_row(requestForm.email) }}
+</div>
+{{ form_end(requestForm) }}
+
+{# BOTTOM #}
+<p class="mt-6 fs-sm text-center">
+	Vous vous souvenez de votre mot de passe?
+	<a href="{{ path ('security_login') }}">Connectez-vous</a>.
+</p>

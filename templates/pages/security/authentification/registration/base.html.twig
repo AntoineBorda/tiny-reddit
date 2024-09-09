@@ -1,0 +1,21 @@
+{% extends 'base/base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	- Créer un compte
+{% endblock %}
+
+{% block body %}
+
+	{# CONTENT #}
+	<section class="pt-6 pt-md-6">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 mx-auto">
+					{% include 'pages/security/authentification/registration/content.html.twig' with {'form': form} %}
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

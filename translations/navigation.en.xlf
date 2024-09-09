@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="2vXtluN" resname="title.connexion">
+        <source>title.connexion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="zPmaw7i" resname="menu.se_deconnecter">
+        <source>menu.se_deconnecter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ZJnmLaI" resname="menu.se_connecter">
+        <source>menu.se_connecter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="2o94unr" resname="menu.creer_compte">
+        <source>menu.creer_compte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="BTD9gtf" resname="title.reseaux_sociaux">
+        <source>title.reseaux_sociaux</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Ug4oKTv" resname="title.navigation">
+        <source>title.navigation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="wZtIfD9" resname="menu.accueil">
+        <source>menu.accueil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="BWiPoCR" resname="menu.faire_proposition">
+        <source>menu.faire_proposition</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="m4L4U_F" resname="menu.mon_compte">
+        <source>menu.mon_compte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="uvWb_.1" resname="menu.contacte_admin">
+        <source>menu.contacte_admin</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="M9JlGga" resname="title.informations">
+        <source>title.informations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="2MRp9N_" resname="menu.vie_privee">
+        <source>menu.vie_privee</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="VNry5Gh" resname="menu.propositions">
+        <source>menu.propositions</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

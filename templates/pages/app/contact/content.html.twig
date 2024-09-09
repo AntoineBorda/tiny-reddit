@@ -1,0 +1,28 @@
+{# TOP #}
+<h2 class="mb-0 fw-bold text-center">
+	Contacte un admin
+</h2>
+
+<p class="mb-6 text-center">
+	Tu peux contacter un admin pour toute question ou problème.
+</p>
+
+{# FORM #}
+{{ form_start(form) }}
+
+{{ form_widget(form.name) }}
+<div class="form-group-errors">
+	{{ form_errors(form.name) }}
+</div>
+
+{{ form_widget(form.email) }}
+<div class="form-group-errors">
+	{{ form_errors(form.email) }}
+</div>
+
+{{ form_widget(form.message) }}
+<div class="form-group-errors">
+	{{ form_errors(form.message) }}
+</div>
+
+{{ form_end(form) }}

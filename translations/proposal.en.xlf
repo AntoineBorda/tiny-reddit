@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="IVffwt1" resname="header.read_more">
+        <source>header.read_more</source>
+        <target>Read more...</target>
+      </trans-unit>
+      <trans-unit id="79AnSeC" resname="header.subtitle">
+        <source>header.subtitle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="QoCJXjL" resname="header.title">
+        <source>header.title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="dEw1Yub" resname="header.p1">
+        <source>header.p1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="C7qBtK9" resname="header.p2">
+        <source>header.p2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="3OQephZ" resname="header.p3">
+        <source>header.p3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="eyJMxT3" resname="header.p4">
+        <source>header.p4</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="xRwlK.r" resname="header.p5">
+        <source>header.p5</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

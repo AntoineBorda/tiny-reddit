@@ -1,0 +1,18 @@
+{# TOP #}
+<h2 class="mb-0 fw-bold text-center">
+	Uh Oh.
+</h2>
+<p class="mb-6 text-center">
+	Si un compte correspondant à votre email existe, alors un email vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe.
+</p>
+<p class="mb-6 text-center">
+	Ce lien expirera dans
+	{{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}
+</p>
+
+{# BOTTOM #}
+<div class="text-center">
+	<a class="btn btn-primary" href="{{ path('app_forgot_password_request') }}">
+		Essayer à nouveau
+	</a>
+</div>

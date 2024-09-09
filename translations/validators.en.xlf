@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="VKDowX6" resname="Error">
+        <source>Error</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit id="B37JmD6" resname="Le fichier ne doit pas dépasser 2 Mo.">
+        <source>Le fichier ne doit pas dépasser 2 Mo.</source>
+        <target>__Le fichier ne doit pas dépasser 2 Mo.</target>
+      </trans-unit>
+      <trans-unit id="EpXQprZ" resname="Le fichier doit être au format JPG, PNG, GIF, WEBP.">
+        <source>Le fichier doit être au format JPG, PNG, GIF, WEBP.</source>
+        <target>__Le fichier doit être au format JPG, PNG, GIF, WEBP.</target>
+      </trans-unit>
+      <trans-unit id="1B_E7aW" resname="Merci de selectionner une image pour ton avatar.">
+        <source>Merci de selectionner une image pour ton avatar.</source>
+        <target>__Merci de selectionner une image pour ton avatar.</target>
+      </trans-unit>
+      <trans-unit id="RcU9pbi" resname="Ton commentaire ne peut pas être vide.">
+        <source>Ton commentaire ne peut pas être vide.</source>
+        <target>__Ton commentaire ne peut pas être vide.</target>
+      </trans-unit>
+      <trans-unit id="L0upoh8" resname="Ton commentaire doit contenir au moins {{ limit }} caractères.">
+        <source>Ton commentaire doit contenir au moins {{ limit }} caractères.</source>
+        <target>__Ton commentaire doit contenir au moins {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="26tm.Cd" resname="Ton commentaire ne peut pas contenir plus de {{ limit }} caractères.">
+        <source>Ton commentaire ne peut pas contenir plus de {{ limit }} caractères.</source>
+        <target>__Ton commentaire ne peut pas contenir plus de {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="Bk.4cK5" resname="Merci de renseigner une proposition.">
+        <source>Merci de renseigner une proposition.</source>
+        <target>__Merci de renseigner une proposition.</target>
+      </trans-unit>
+      <trans-unit id="118UUQi" resname="La proposition doit contenir au moins {{ limit }} caractères.">
+        <source>La proposition doit contenir au moins {{ limit }} caractères.</source>
+        <target>__La proposition doit contenir au moins {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="UA91FFK" resname="La proposition doit contenir au maximum {{ limit }} caractères.">
+        <source>La proposition doit contenir au maximum {{ limit }} caractères.</source>
+        <target>__La proposition doit contenir au maximum {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="Kja3z00" resname="L'auteur doit contenir au moins {{ limit }} caractères.">
+        <source>L'auteur doit contenir au moins {{ limit }} caractères.</source>
+        <target>__L'auteur doit contenir au moins {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="59X8a.X" resname="L'auteur doit contenir au maximum {{ limit }} caractères.">
+        <source>L'auteur doit contenir au maximum {{ limit }} caractères.</source>
+        <target>__L'auteur doit contenir au maximum {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="GbD27oL" resname="Cet email est déjà utilisé.">
+        <source>Cet email est déjà utilisé.</source>
+        <target>__Cet email est déjà utilisé.</target>
+      </trans-unit>
+      <trans-unit id="dAUBDPz" resname="Ce pseudo est déjà utilisé.">
+        <source>Ce pseudo est déjà utilisé.</source>
+        <target>__Ce pseudo est déjà utilisé.</target>
+      </trans-unit>
+      <trans-unit id="_ZcZndG" resname="Merci de renseigner un email.">
+        <source>Merci de renseigner un email.</source>
+        <target>__Merci de renseigner un email.</target>
+      </trans-unit>
+      <trans-unit id="tEK3s1q" resname="Merci de renseigner un email valide.">
+        <source>Merci de renseigner un email valide.</source>
+        <target>__Merci de renseigner un email valide.</target>
+      </trans-unit>
+      <trans-unit id="llen1Ef" resname="L'email doit contenir au moins {{ limit }} caractères.">
+        <source>L'email doit contenir au moins {{ limit }} caractères.</source>
+        <target>__L'email doit contenir au moins {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id=".sjprCk" resname="L'email doit contenir au maximum {{ limit }} caractères.">
+        <source>L'email doit contenir au maximum {{ limit }} caractères.</source>
+        <target>__L'email doit contenir au maximum {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="qOwXKHB" resname="Merci de renseigner un mot de passe.">
+        <source>Merci de renseigner un mot de passe.</source>
+        <target>__Merci de renseigner un mot de passe.</target>
+      </trans-unit>
+      <trans-unit id=".HdzZ2h" resname="Le mot de passe doit contenir au moins {{ limit }} caractères.">
+        <source>Le mot de passe doit contenir au moins {{ limit }} caractères.</source>
+        <target>__Le mot de passe doit contenir au moins {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="RYBf.8E" resname="Le mot de passe doit contenir au maximum {{ limit }} caractères.">
+        <source>Le mot de passe doit contenir au maximum {{ limit }} caractères.</source>
+        <target>__Le mot de passe doit contenir au maximum {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="mGhrPYV" resname="Le mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre et un caractère spécial.">
+        <source>Le mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre et un caractère spécial.</source>
+        <target>__Le mot de passe doit contenir au moins une majuscule, une minuscule, un chiffre et un caractère spécial.</target>
+      </trans-unit>
+      <trans-unit id="i.C97U2" resname="Merci de renseigner un pseudo.">
+        <source>Merci de renseigner un pseudo.</source>
+        <target>__Merci de renseigner un pseudo.</target>
+      </trans-unit>
+      <trans-unit id="LuZntVz" resname="Le pseudo doit contenir au moins {{ limit }} caractères.">
+        <source>Le pseudo doit contenir au moins {{ limit }} caractères.</source>
+        <target>__Le pseudo doit contenir au moins {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="NutxuUc" resname="Le pseudo doit contenir au maximum {{ limit }} caractères.">
+        <source>Le pseudo doit contenir au maximum {{ limit }} caractères.</source>
+        <target>__Le pseudo doit contenir au maximum {{ limit }} caractères.</target>
+      </trans-unit>
+      <trans-unit id="o5rNHxm" resname="Merci de renseigner votre mot de passe">
+        <source>Merci de renseigner votre mot de passe</source>
+        <target>__Merci de renseigner votre mot de passe</target>
+      </trans-unit>
+      <trans-unit id="V9lfDl7" resname="Votre mot de passe doit contenir au moins {{ limit }} caractères">
+        <source>Votre mot de passe doit contenir au moins {{ limit }} caractères</source>
+        <target>__Votre mot de passe doit contenir au moins {{ limit }} caractères</target>
+      </trans-unit>
+      <trans-unit id="GkQtR4t" resname="Merci de renseigner votre email">
+        <source>Merci de renseigner votre email</source>
+        <target>__Merci de renseigner votre email</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

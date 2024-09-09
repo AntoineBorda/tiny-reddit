@@ -1,0 +1,21 @@
+{% set current_type = app.request.attributes.get('type') %}
+
+<h6 class="badge rounded-pill">
+	FILTRES :
+</h6>
+
+<a class="badge rounded-pill {{ current_type == 'recentes' ? 'bg-primary' : 'text-bg-secondary-subtle' }}" href="{{ path('app_proposal_filter_expressions', {'type': 'recentes'}) }}">
+	<span class="h6 {{ current_type == 'recentes' ? 'text-dark fw-bolder' : 'text-white' }}">NEW !</span>
+</a>
+<a class="badge rounded-pill {{ current_type == 'anciennes' ? 'bg-primary' : 'text-bg-secondary-subtle' }}" href="{{ path ('app_proposal_filter_expressions', {'type' : 'anciennes'}) }}">
+	<span class="h6 {{ current_type == 'anciennes' ? 'text-dark fw-bolder' : 'text-white' }}">OLD</span>
+</a>
+<a class="badge rounded-pill {{ current_type == 'best-notes' or current_type == null ? 'bg-primary' : 'text-bg-secondary-subtle' }}" href="{{ path ('app_proposal_filter_expressions', {'type' : 'best-notes'}) }}">
+	<span class="h6 {{ current_type == 'best-notes' ? 'text-dark fw-bolder' : 'text-white' }}">SCORE +</span>
+</a>
+<a class="badge rounded-pill {{ current_type == 'worst-notes' ? 'bg-primary' : 'text-bg-secondary-subtle' }}" href="{{ path ('app_proposal_filter_expressions', {'type' : 'worst-notes'}) }}">
+	<span class="h6 {{ current_type == 'worst-notes' ? 'text-dark fw-bolder' : 'text-white' }}">SCORE -</span>
+</a>
+<a class="badge rounded-pill {{ current_type == 'favoris' ? 'bg-primary' : 'text-bg-secondary-subtle' }}" href="{{ path ('app_proposal_filter_expressions', {'type' : 'favoris'}) }}">
+	<span class="h6 {{ current_type == 'favoris' ? 'text-dark fw-bolder' : 'text-white' }}">MES FAVORIS</span>
+</a>

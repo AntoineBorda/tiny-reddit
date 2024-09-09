@@ -1,0 +1,44 @@
+{# HEADING #}
+<div class="card-header border-bottom border-primary">
+	<h4 class="mb-0">
+		Validation des requêtes de propositions
+	</h4>
+</div>
+
+{# BODY #}
+<div
+	class="card-body">
+
+	{# TABLE #}
+	<div class="table-responsive">
+
+		<table class="table table-dark">
+			<thead class="table-dark">
+				<tr>
+					<th scope="col">Actions</th>
+					<th scope="col">Suggestion</th>
+					<th scope="col">Auteur</th>
+					<th scope="col">Publicateur</th>
+				</tr>
+			</thead>
+
+			{% for expression in expressions %}
+				<tr>
+					<td>
+						<a class="btn btn-outline-success btn-xs" href="{{ path ('admin_request_validate', {'id' : expression.id} ) }}">
+							<i class="fa-solid fa-check fa-2xl text-primary"></i>
+						</a>
+						<a class="btn btn-outline-danger btn-xs mt-2" href="{{ path ('admin_request_invalidate', {'id' : expression.id} ) }}">
+							<i class="fa-solid fa-xmark fa-2xl text-primary"></i>
+						</a>
+					</td>
+					<td>{{ expression.expression }}</td>
+					<td>{{ expression.author }}</td>
+					<td>{{ expression.publisher }}</td>
+				</tr>
+			{% endfor %}
+
+		</tbody>
+	</table>
+
+</div>

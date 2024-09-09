@@ -1,0 +1,19 @@
+{% extends '/pages/account/user/base.html.twig' %}
+
+{% set current_route = app.request.attributes.get('_route') %}
+
+{% block title %}
+	{{ parent() }}
+	- Mes infos
+{% endblock %}
+
+{# CONTENT #}
+{% block content %}
+
+	<div class="col-12 col-md-9">
+		<div class="card card-bleed border border-primary shadow-light-lg mb-6">
+			{% include('pages/account/user/edit_info/content.html.twig') %}
+		</div>
+	</div>
+
+{% endblock %}

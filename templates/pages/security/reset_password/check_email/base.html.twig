@@ -1,0 +1,21 @@
+{% extends 'base/base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	- Mot de passe
+{% endblock %}
+
+{% block body %}
+
+	{# CONTENT #}
+	<section class="pt-6 pt-md-6">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 mx-auto">
+					{% include('pages/security/reset_password/check_email/content.html.twig') with {'resetToken': resetToken} %}
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+@mixin commonTextStyles($fontSize, $lineHeight, $fontWeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+}
+
+.text-logo-footer {
+    @include commonTextStyles(20rem, 0.7, $font-weight-bolder);
+
+    color: $dark;
+    outline: none;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $dark;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

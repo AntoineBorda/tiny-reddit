@@ -1,0 +1,76 @@
+{# BRAND #}
+<a href="{{ path ('app_proposal') }}">
+	<img src="{{ asset('build/img/logo/logo.png') }}" alt="Logo" class="custom-logo">
+</a>
+
+{# TOGGLER #}
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	<i class="fa-solid fa-bars fa-xl"></i>
+</button>
+
+{# COLLAPSE #}
+<div
+	class="collapse navbar-collapse bg-black" id="navbarCollapse">
+
+	{# TOGGLER #}
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<i class="fa-solid fa-xmark fa-xl"></i>
+	</button>
+
+	{# NAVIGATION #}
+
+	{# LIST #}
+	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+		<li class="nav-item">
+			<a class="nav-link" href="{{ path ('app_proposal') }}">
+				{{ 'menu.propositions'|trans({}, 'navigation') }}
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{{ path ('app_addexpression') }}">
+				{{ 'menu.faire_proposition'|trans({}, 'navigation') }}
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{{ path ('app_guessr') }}">
+				{{ 'menu.guessr'|trans({}, 'navigation') }}
+			</a>
+		</li>
+
+	</ul>
+
+	{# BUTTONS #}
+	<div class="d-flex pt-4 pb-4">
+
+		<a class="pc-wp px-4" href="{{ path ('app_contact')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="{{ 'menu.contacte_admin'|trans({}, 'navigation') }}">
+			<i class="fa-regular fa-envelope fa-xl"></i>
+		</a>
+
+		{% if is_granted("ROLE_USER") %}
+
+			<a class="pc-wp px-4" href="{{ path ('user_edit_profile', { 'id': app.user.id }) }}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="{{ 'menu.mon_compte'|trans({}, 'navigation') }}">
+				<i class="fa-solid fa-user-gear fa-xl"></i>
+			</a>
+
+
+		{% else %}
+
+			<a class="pc-wp px-4" href="{{ path ('security_login') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="{{ 'menu.se_connecter'|trans({}, 'navigation') }}">
+				<i class="fa-solid fa-right-to-bracket fa-xl"></i>
+			</a>
+
+
+			<a class="pc-wp px-4" href="{{ path ('security_registration') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="{{ 'menu.creer_compte'|trans({}, 'navigation') }}">
+				<i class="fa-solid fa-user-plus fa-xl"></i>
+			</a>
+
+		{% endif %}
+
+		<a class="fw-bold pc-pw px-4" href="{{ path ('app_changelog')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Changelog">
+			v. 0.90.2
+		</a>
+
+	</div>
+
+</div>

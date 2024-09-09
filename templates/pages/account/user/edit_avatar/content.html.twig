@@ -1,0 +1,22 @@
+{# HEADING #}
+<div class="card-header border-bottom border-primary">
+	<h4 class="mb-0">
+		Modifier l'avatar
+	</h4>
+</div>
+
+{# BODY #}
+<div
+	class="card-body">
+
+	{# FORM #}
+	{{ form_start(form) }}
+	<div class="form-group">
+		{{ form_widget(form.avatarFile) }}
+		<div class="form-group-errors">
+			{{ form_errors(form.avatarFile) }}
+		</div>
+	</div>
+	{{ form_end(form) }}
+
+</div>

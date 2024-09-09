@@ -1,0 +1,159 @@
+<div
+	class="col-12 col-lg-12">
+
+	<!-- HEAD -->
+	<div class="d-flex align-items-center">
+		<div>
+			<a href="{{ path ('app_proposal') }}">
+				<img src="{{ asset('build/img/logo/logo.png') }}" alt="Logo" class="custom-logo">
+			</a>
+		</div>
+		<div class="d-flex flex-column justify-content-center text-dark fw-bold text-uppercase">
+			<div class="mx-4">StarCitizenGame</div>
+			<div class="mx-4">StarCitizenGame.gg</div>
+		</div>
+	</div>
+
+	{# SOCIALS #}
+	<div class="mt-6">
+		<ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+			<li class="list-inline-item list-social-item me-5">
+				<a href="https://discord.gg/globnot" class="text-dark">
+					<i class="fa-brands fa-discord fa-xl"></i>
+				</a>
+			</li>
+			<li class="list-inline-item list-social-item me-5">
+				<a href="https://twitter.com/globnotstream" class="text-dark">
+					<i class="fa-brands fa-x-twitter fa-xl"></i>
+				</a>
+			</li>
+			<li class="list-inline-item list-social-item me-5">
+				<a href="https://www.twitch.tv/globnot" class="text-dark">
+					<i class="fa-brands fa-twitch fa-xl"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<hr class="text-dark mt-6 mb-8">
+
+</div>
+
+{# PLAN #}
+
+{# CONNEXION #}
+<div class="col-6 col-md-4 col-lg-2">
+	<h6 class="fw-bold text-uppercase text-dark">
+		{{ 'title.connexion'|trans({}, 'navigation') }}
+	</h6>
+
+	<ul class="list-unstyled text-dark mb-6 mb-md-8 mb-lg-0">
+		{% if is_granted("ROLE_USER") %}
+			<li class="mb-3">
+				<a href="{{ path ('security_logout', {'_csrf_token': csrf_token('logout')}) }}" class="text-reset">
+					{{ 'menu.se_deconnecter'|trans({}, 'navigation') }}
+				</a>
+			</li>
+		{% else %}
+			<li class="mb-3">
+				<a href="{{ path ('security_login') }}" class="text-reset">
+					{{ 'menu.se_connecter'|trans({}, 'navigation') }}
+				</a>
+			</li>
+			<li class="mb-3">
+				<a href="{{ path ('security_registration') }}" class="text-reset">
+					{{ 'menu.creer_compte'|trans({}, 'navigation') }}
+				</a>
+			</li>
+		{% endif %}
+	</ul>
+
+</div>
+
+{# SOCIALS #}
+<div class="col-6 col-md-4 col-lg-2">
+	<h6 class="fw-bold text-uppercase text-dark">
+		{{ 'title.reseaux_sociaux'|trans({}, 'navigation') }}
+	</h6>
+
+	<ul class="list-unstyled text-dark mb-6 mb-md-8 mb-lg-0">
+		<li class="mb-3">
+			<a href="https://discord.gg/globnot" class="text-reset">
+				Discord
+			</a>
+		</li>
+		<li class="mb-3">
+			<a href="https://twitter.com/globnotstream" class="text-reset">
+				Twitter
+			</a>
+		</li>
+		<li class="mb-3">
+			<a href="https://www.twitch.tv/globnot" class="text-reset">
+				Twitch
+			</a>
+		</li>
+	</ul>
+
+</div>
+
+{# NAVIGATION #}
+<div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+	<h6 class="fw-bold text-uppercase text-dark">
+		{{ 'title.navigation'|trans({}, 'navigation') }}
+	</h6>
+
+	<ul class="list-unstyled text-dark mb-0">
+		<li class="mb-3">
+			<a href="{{ path ('app_proposal') }}" class="text-reset">
+				{{ 'menu.accueil'|trans({}, 'navigation') }}
+			</a>
+		</li>
+		<li class="mb-3">
+			<a href="{{ path ('app_addexpression') }}" class="text-reset">
+				{{ 'menu.faire_proposition'|trans({}, 'navigation') }}
+			</a>
+		</li>
+		<li class="mb-3">
+			<a href="{{ path ('user_account') }}" class="text-reset">
+				{{ 'menu.mon_compte'|trans({}, 'navigation') }}
+			</a>
+		</li>
+		<li class="mb-3">
+			<a href="{{ path ('app_contact') }}" class="text-reset">
+				{{ 'menu.contacte_admin'|trans({}, 'navigation') }}
+			</a>
+		</li>
+	</ul>
+
+</div>
+
+{# WATCH #}
+<div class="col-6 col-md-4 col-lg-2">
+
+	<h6 class="fw-bold text-uppercase text-dark">
+		{{ 'title.informations'|trans({}, 'navigation') }}
+	</h6>
+
+	<ul class="list-unstyled text-dark mb-0">
+		<li class="mb-3">
+			<a href="{{ path ('app_changelog') }}" class="text-reset">
+				Changelog
+			</a>
+		</li>
+		<li class="mb-3">
+			<a href="{{ path ('app_changelog') }}" class="text-reset">
+				Roadmap
+			</a>
+		</li>
+		<li>
+			<a href="{{ path ('app_legal_notice') }}" class="text-reset">
+				{{ 'menu.vie_privee'|trans({}, 'navigation') }}
+			</a>
+		</li>
+	</ul>
+
+</div>
+
+<div class="col text-end">
+	<div class="text-logo-footer">:P</div>
+</div>

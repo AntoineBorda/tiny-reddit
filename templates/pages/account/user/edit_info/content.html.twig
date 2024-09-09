@@ -1,0 +1,39 @@
+{# HEADING #}
+<div class="card-header border-bottom border-primary">
+	<h4 class="mb-0">
+		Modifier mes infos
+	</h4>
+</div>
+
+{# BODY #}
+<div
+	class="card-body">
+
+	{# FORM #}
+	{{ form_start(form) }}
+	<div class="form-group">
+		{{ form_label(form.pseudo) }}
+		{{ form_widget(form.pseudo) }}
+		<div class="form-group-errors">
+			{{ form_errors(form.pseudo) }}
+		</div>
+		{{ form_label(form.email.first) }}
+		{{ form_widget(form.email.first) }}
+		<div class="form-group-errors">
+			{{ form_errors(form.email.first) }}
+		</div>
+		{{ form_label(form.email.second) }}
+		{{ form_widget(form.email.second) }}
+		<div class="form-group-errors">
+			{{ form_errors(form.email.second) }}
+		</div>
+	</div>
+	{{ form_end(form) }}
+
+	{# DELETE #}
+	<p class="text-center mb-0">
+		<small class="text-muted">Si vous ne voulez plus utiliser StarCitizenGame, vous pouvez
+			<a class="text-danger" href="#!">supprimer votre compte</a>.</small>
+	</p>
+
+</div>

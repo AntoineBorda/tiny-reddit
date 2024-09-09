@@ -1,0 +1,37 @@
+{# HEADER #}
+<div class="container mt-6">
+	<div
+		class="row">
+		{# LEFT #}
+		<div class="col-md-4">
+			<h5 class="text-uppercase text-primary fw-bold">{{ 'header.subtitle'|trans({}, 'guessr') }}</h5>
+			<h2 class="text-uppercase fw-bold">{{ 'header.title'|trans({}, 'guessr') }}</h2>
+		</div>
+
+		{# RIGHT #}
+		<div class="col-md-8 fs-sm">
+
+			<p>{{ 'header.p1'|trans({}, 'guessr') }}</p>
+			<p>{{ 'header.p2'|trans({}, 'guessr') }}</p>
+
+			<div class="collapse" id="collapseExample">
+
+				<p>{{ 'header.p3'|trans({}, 'guessr') }}</p>
+				<p>{{ 'header.p4'|trans({}, 'guessr') }}</p>
+				<p>{{ 'header.p5'|trans({}, 'guessr') }}</p>
+			</div>
+
+			<p class="d-inline-flex gap-1">
+				<a class="btn btn-primary btn-xs" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					{{ 'header.read_more'|trans({}, 'guessr') }}
+				</a>
+			</p>
+
+		</div>
+	</div>
+</div>
+
+{# GUESSR #}
+<div class="card card-row border border-primary mb-6 mt-6 p-6">
+	{% include('pages/app/guessr/components/_guessr.html.twig') %}
+</div>

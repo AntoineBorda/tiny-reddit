@@ -1,0 +1,58 @@
+<!-- BREADCRUMB -->
+<nav class="bg-dark d-md-none">
+	<div class="container-md">
+		<div class="row align-items-center">
+			<div class="col">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<span class="text-white">
+
+							{% block breadcrumbtitle %}
+								{# CONTENT #}
+							{% endblock %}
+
+						</span>
+					</li>
+					<li class="breadcrumb-item active" aria-current="page">
+						<span class="text-white">
+
+							{% block breadcrumb %}
+								{# CONTENT #}
+							{% endblock %}
+
+						</span>
+					</li>
+				</ol>
+			</div>
+			<div class="col-auto">
+				<div class="navbar-dark">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+{# CARD #}
+<div class="card card-bleed border border-primary md-0 shadow-light-lg">
+	<div class="collapse d-md-block" id="sidenavCollapse">
+		<div class="card-body">
+			<h6 class="fw-bold text-uppercase mb-3">
+
+				{% block listtitle %}
+					Compte
+				{% endblock %}
+
+			</h6>
+			<ul class="card-list list mb-6">
+
+				{% block list %}
+					{# CONTENT #}
+				{% endblock %}
+
+			</ul>
+		</div>
+	</div>
+</div>

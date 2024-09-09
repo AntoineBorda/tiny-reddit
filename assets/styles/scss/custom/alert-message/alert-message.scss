@@ -1,0 +1,19 @@
+.center-screen {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.alert-neumorphism {
+    height: auto;
+    min-height: 20vh;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px $dark,
+
+}
+
+.custom-alert {
+    padding: 1.75rem;
+}

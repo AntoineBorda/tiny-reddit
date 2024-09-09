@@ -1,0 +1,110 @@
+// Color system
+
+$white: #f8f8f8 !default;
+$gray-100: #d8dadf !default;
+$gray-200: #cdcfd4 !default;
+$gray-300: #b5b8bb !default;
+$gray-400: #929599 !default;
+$gray-500: #797b7e !default;
+$gray-600: #595a5c !default;
+$gray-700: #414346 !default;
+$gray-800: #2d2f31 !default;
+$gray-900: #1a1e24 !default;
+$dark: #13161b !default;
+$black: #0e1014 !default;
+
+$primary: #007fd4 !default;
+$primary-desat: #fcf196 !default;
+$secondary: $gray-700 !default;
+$success: #18B385 !default;
+$info: #99ACCF !default;
+$warning: #FABC3C !default;
+$danger: #e22d42 !default;
+$light: $gray-100 !default;
+
+$theme-colors: ("primary": $primary,
+    "primary-desat": $primary-desat,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "black": $black,
+    "white": $white,
+) !default;
+
+// Typography
+
+$font-family-base: 'Cairo',
+sans-serif !default;
+
+$font-family-heading: 'Raleway',
+sans-serif !default;
+
+$font-size-base: 1rem !default; // 16px
+
+$font-size-xs: 0.75rem !default; // 12px
+$font-size-sm: 0.875rem !default; // 14px
+$font-size-md: 1rem !default; // 16px
+$font-size-lg: 1.25rem !default; // 20px
+$font-size-xl: 1.875rem !default; // 30px
+$font-size-xxl: 2.5rem !default; // 4àpx
+
+$font-weight-lighter: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 900 !default;
+
+$line-height-base: 1.6 !default;
+$line-height-sm: 1.3 !default;
+$line-height-lg: 1.3 !default;
+
+$h1-font-size: 2.5rem !default; // 40px
+$h2-font-size: 1.875rem !default; // 30px
+$h3-font-size: 1.25rem !default; // 20px
+$h4-font-size: 1rem !default; // 16px
+$h5-font-size: 0.875rem !default; // 14px
+$h6-font-size: 0.75rem !default; // 12px
+
+$font-sizes: (1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+    xs: $font-size-xs,
+    sm: $font-size-sm,
+    md: $font-size-md,
+    lg: $font-size-lg,
+    xl: $font-size-xl,
+    xxl: $font-size-xxl,
+) !default;
+
+// Navbar
+
+$navbar-padding-y: 0.5rem !default;
+$navbar-nav-link-padding-x: 0.5rem !default;
+$navbar-nav-link-font-weight: $font-weight-light !default;
+
+$navbar-light-color: $white !default;
+$navbar-light-hover-color: $primary !default;
+$navbar-light-active-color: $primary !default;
+
+// Navbar
+
+$navbar-brand-font-weight: $font-weight-bold !default;
+
+$navbar-nav-link-font-weight: $font-weight-bold !default;
+
+$navbar-nav-item-spacing: 1.5rem !default;
+
+$navbar-dropdown-toggle-margin-bottom: 1.5rem !default;
+
+// Body
+
+$body-bg: $dark !default;
+$body-color: $white !default;

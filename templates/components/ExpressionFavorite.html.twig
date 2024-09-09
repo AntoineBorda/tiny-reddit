@@ -1,0 +1,25 @@
+<div {{ attributes }}>
+
+	{% if isNotConnected %}
+
+		{{ component('AlertMessageFavoriteMustBeConnected') }}
+
+	{% endif %}
+
+	{% if isFavorite  %}
+
+		<button type="button" class="btn btn-link" data-action="live#action" data-action-name="setFavorite" data-expression-id="{{ expressionId }}">
+			<i class="fas fa-star fa-2xl"></i>
+		</button>
+
+	{% else %}
+
+		<button type="button" class="btn btn-link" data-action="live#action" data-action-name="setFavorite" data-expression-id="{{ expressionId }}">
+			<i class="far fa-star fa-2xl"></i>
+		</button>
+
+
+	{% endif %}
+
+
+</div>

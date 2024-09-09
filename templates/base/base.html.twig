@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link
+		rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><circle cx=%2264%22 cy=%2264%22 r=%2260%22 fill=%22%23ffcc01%22 /></svg>">
+
+		{# MATOMO #}
+		{% include 'base/_matomo.html.twig' %}
+
+		{# ALERT MESSAGE #}
+		{% include 'base/_alert_message.html.twig' %}
+
+		<title>
+			{% block title %}StarCitizenGame
+			{% endblock %}
+		</title>
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+
+	<body
+		class="bg-dark pt-12">
+
+		{# NAVIGATION #}
+		<div
+			id="navigation" class="fixed-top">
+
+			{# NAVBAR #}
+			<nav class="navbar navbar-expand-lg bg-black fs-sm">
+				<div class="container-fluid">
+					{% include 'partials/_navbar.html.twig' %}
+				</div>
+			</nav>
+
+			{# BREADCRUMB #}
+			<header class="overlay overlay-dark overlay-100 bg-cover border-primary border-top border-bottom">
+				<div class="container-fluid">
+					<div class="row justify-content-start">
+						<div class="col-12 col-md-10 col-lg-8">
+							{% include('partials/_breadcrumb.html.twig') %}
+						</div>
+					</div>
+				</div>
+			</header>
+
+		</div>
+
+		{# CONTENT #}
+		{% block body %}{% endblock %}
+
+		{# CURVE FOOTER #}
+		<div class="position-relative mt-8">
+			<div class="shape shape-bottom shape-fluid-x text-primary">
+				{% include('partials/shapes/curves/_curve_footer.html.twig') %}
+			</div>
+		</div>
+
+		{# FOOTER #}
+		<footer class="py-8 py-md-8 bg-primary">
+			<div class="container-fluid">
+				<div class="row">
+					{% include 'partials/_footer.html.twig' %}
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  php:
+    image: php:8.2.8-fpm
+    volumes:
+      - php_data:/var/www/html
+    restart: always
+    container_name: startcitizengame-php
+
+  db:
+    image: mariadb:11.0
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    env_file:
+      - .env.local
+    ports:
+      - 3307:3306
+    container_name: startcitizengame-db
+
+  mailer:
+    image: schickling/mailcatcher
+    restart: always
+    ports:
+      - "1025:1025"
+      - "1081:1080"
+    container_name: startcitizengame-mailer
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    container_name: startcitizengame-adminer
+
+volumes:
+  php_data:
+  db_data:

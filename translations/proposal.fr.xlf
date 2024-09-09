@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="QoCJXjL" resname="header.title">
+        <source>header.title</source>
+        <target>Centraliser les porpositions et idées des communautés de joueurs</target>
+      </trans-unit>
+      <trans-unit id="79AnSeC" resname="header.subtitle">
+        <source>header.subtitle</source>
+        <target>Star Citizen</target>
+      </trans-unit>
+      <trans-unit id="C7qBtK9" resname="header.p2">
+        <source>header.p2</source>
+        <target>Quelques exemples : équilibrage, création de nouvelles fonctionnalités, amélioration de fonctionnalités existantes, suggestions découlant de problématiques rencontrées, etc. Elles peuvent concerner l'univers persistant, l'Arena Commander ou toute autre forme d'environnement. Mais aussi le site internet RSI, Spectrum, les relations entre les développeurs et les backers, la communication, la roadmap, etc. Bref, aucune limite si ce n'est celle de votre imagination (et dans le cadre de Star Citizen).</target>
+      </trans-unit>
+      <trans-unit id="dEw1Yub" resname="header.p1">
+        <source>header.p1</source>
+        <target>L'idée est de centraliser toutes les suggestions, propositions et idées faites par les différentes communautés de joueurs de Star Citizen. Il n'y a pas de limites. Ces suggestions peuvent concerner tous les domaines, du moment qu'elles se rapportent à Star Citizen.</target>
+      </trans-unit>
+      <trans-unit id="eyJMxT3" resname="header.p4">
+        <source>header.p4</source>
+        <target>La fréquence des rapports reste encore à définir, mais idéalement, tous les X mois (chaque mois, à chaque patch majeur ?), un rapport sera généré à partir des données collectées ici et transmis aux équipes de CIG via Spectrum ou un autre moyen.</target>
+      </trans-unit>
+      <trans-unit id="3OQephZ" resname="header.p3">
+        <source>header.p3</source>
+        <target>Les propositions seront classées par catégories et sous-catégories. Vous pourrez également les filtrer par mots-clés (à venir). Vous pouvez aussi voter pour les propositions qui vous semblent les plus pertinentes.</target>
+      </trans-unit>
+      <trans-unit id="xRwlK.r" resname="header.p5">
+        <source>header.p5</source>
+        <target>N'hésitez pas à nous faire part de vos suggestions pour améliorer cet outil (page contact, discord, ou autre). Elles seront toutes considérées.</target>
+      </trans-unit>
+      <trans-unit id="IVffwt1" resname="header.read_more">
+        <source>header.read_more</source>
+        <target>Lire la suite...</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

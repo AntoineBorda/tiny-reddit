@@ -1,0 +1,21 @@
+{% extends 'base/base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	- Vie privée / Mentions légales
+{% endblock %}
+
+{% block body %}
+
+	{# CONTENT #}
+	<section class="pt-6 pt-md-6">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12 mx-auto">
+					{% include('pages/app/legal_notice/content.html.twig') %}
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

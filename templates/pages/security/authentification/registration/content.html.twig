@@ -1,0 +1,43 @@
+{# TOP #}
+<h2 class="mb-0 fw-bold text-center">
+	Créer un compte
+</h2>
+<p class="mb-6 text-center">
+	Créer un compte pour accéder à toutes les fonctionnalités de l'application.
+</p>
+
+{# FORM #}
+{{ form_start(form) }}
+<div class="form-group">
+	{{ form_widget(form.pseudo) }}
+	<div class="form-group-errors">
+		{{ form_errors(form.pseudo) }}
+	</div>
+</div>
+<div class="form-group">
+	{{ form_widget(form.email.first) }}
+	<div class="form-group-errors">
+		{{ form_errors(form.email.first) }}
+	</div>
+	{{ form_widget(form.email.second) }}
+	<div class="form-group-errors">
+		{{ form_errors(form.email.second) }}
+	</div>
+</div>
+<div class="form-group">
+	{{ form_widget(form.plainPassword.first) }}
+	<div class="form-group-errors">
+		{{ form_errors(form.plainPassword.first) }}
+	</div>
+	{{ form_widget(form.plainPassword.second) }}
+	<div class="form-group-errors">
+		{{ form_errors(form.plainPassword.second) }}
+	</div>
+</div>
+{{ form_end(form) }}
+
+{# BOTTOM #}
+<p class="mt-6 fs-sm text-center">
+	Vous avez déjà un compte ?
+	<a class="text-primary" href="{{ path('security_login') }}">Connexion</a>.
+</p>

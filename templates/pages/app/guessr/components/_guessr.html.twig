@@ -1,0 +1,34 @@
+{# BADGES #}
+<div class="col-12">
+
+	<div
+		class="d-flex flex-column align-items-start">
+		{# DATE #}
+		<span class="badge bg-gray-900">
+			<span class="h6 text-uppercase">DATE</span>
+		</span>
+		{# DIFFICULTE #}
+		<span class="badge bg-gray-900 mt-2">
+			<span class="h6 text-uppercase">DIFFICULTE</span>
+		</span>
+		{# LIEU #}
+		<span class="badge bg-gray-900 mt-2">
+			<span class="h6 text-uppercase">LIEU</span>
+		</span>
+	</div>
+
+</div>
+
+{# INDICE #}
+<div class="mt-4">
+
+	<i class="fa-solid fa-quote-left fa-sm text-primary"></i>
+	INDICE
+	<i class="fa-solid fa-quote-right fa-sm text-primary"></i>
+
+</div>
+
+
+<a data-bigpicture='{{ {"imgSrc": asset("uploads/img/guessr/image-attractive.jpg")}|json_encode }}' href="#">
+	<img src="{{ asset('uploads/img/guessr/image-attractive.jpg') }}" class="img-fluid" alt="...">
+</a>

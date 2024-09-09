@@ -1,0 +1,39 @@
+{% if app.request.query.get('connexionSuccess') %}
+	{{ component('AlertMessageConnnexionSuccess') }}
+{% endif %}
+{% if app.request.query.get('logoutSuccess') %}
+	{{ component('AlertMessageLogoutSuccess') }}
+{% endif %}
+{% if app.request.query.get('registrationSuccess') %}
+	{{ component('AlertMessageRegistrationSuccess') }}
+{% endif %}
+{% if app.request.query.get('sendMessageSuccess') %}
+	{{ component('AlertMessageSendMessageSuccess') }}
+{% endif %}
+{% if app.request.query.get('favorisNotConnected') %}
+	{{ component('AlertMessageFavoriteFilterMustBeConnected') }}
+{% endif %}
+{% if app.request.query.get('addExpressionSuccess') %}
+	{{ component('AlertMessageAddExpressionSuccess') }}
+{% endif %}
+{% if app.request.query.get('addExpressionDanger') %}
+	{{ component('AlertMessageAddExpressionDanger') }}
+{% endif %}
+{% if app.request.query.get('passwordSuccess') %}
+	{{ component('AlertMessagePasswordSuccess') }}
+{% endif %}
+{% if app.request.query.get('passwordDanger') %}
+	{{ component('AlertMessagePasswordDanger') }}
+{% endif %}
+{% if app.request.query.get('updateProfilSuccess') %}
+	{{ component('AlertMessageProfilSuccess') }}
+{% endif %}
+{% if app.request.query.get('updateAvatarSuccess') %}
+	{{ component('AlertMessageAvatarSuccess') }}
+{% endif %}
+{% if app.request.query.get('requestValidateSuccess') %}
+	{{ component('AlertMessageRequestValidateSuccess') }}
+{% endif %}
+{% if app.request.query.get('requestInvalidateSuccess') %}
+	{{ component('AlertMessageRequestInvalidateSuccess') }}
+{% endif %}

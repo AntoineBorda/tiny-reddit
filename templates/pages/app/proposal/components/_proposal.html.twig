@@ -1,0 +1,58 @@
+{# DATE #}
+<div class="col-12">
+
+	<span class="badge bg-gray-900">
+		<span class="h6 text-uppercase">{{ expression.createdAt|date('d-m-Y') }}</span>
+	</span>
+
+</div>
+
+{# PROPOSAL #}
+<div class="mt-4">
+
+	<i class="fa-solid fa-quote-left fa-sm text-primary"></i>
+	{{ expression.expression }}
+	<i class="fa-solid fa-quote-right fa-sm text-primary"></i>
+
+</div>
+
+{# VOTE #}
+<div
+	class="d-flex mt-6">
+
+	{# ExpressionVote COMPONENT #}
+	{{ component('ExpressionVote', {'expression': expression, 'expressionId': expression.id}) }}
+
+</div>
+
+{# AVATAR & PUBLISHER & FAVORITES #}
+<div class="d-flex align-items-center justify-content-between mt-2">
+
+	<div class="d-flex align-items-center">
+
+		{% set useravatar = avatar_provider.getAvatarByUser(expression.publisher) %}
+		<div class="avatar avatar-lg me-2">
+			{% if useravatar and useravatar.name %}
+				<img src="{{ asset('uploads/img/avatars/' ~ useravatar.name) }}" alt="Avatar de {{ expression.publisher }}" class="avatar-img rounded-circle">
+			{% else %}
+				<img src="{{ asset('build/img/avatar/avatar.png') }}" alt="Avatar par défaut" class="avatar-img rounded-circle">
+			{% endif %}
+		</div>
+
+		<h6 class="text-uppercase mb-0">
+			AUTEUR :
+			{{ expression.publisher }}
+		</h6>
+
+	</div>
+
+	{# ExpressionFavorite COMPONENT #}
+	<div class="d-flex align-items-center mt-4">
+		{{ component('ExpressionFavorite', {'userExpression': userExpression, 'expression': expression, 'expressionId': expression.id, 'isFavorite': favorites[expression.id] ?? false}) }}
+	</div>
+
+</div>
+
+{# COMMENTS #}
+{# ExpressionComment COMPONENT #}
+{{ component('ExpressionComment', {'expressionId': expression.id, initialFormData: comment, 'commentsByExpression': commentsByExpression[expression.id]}) }}

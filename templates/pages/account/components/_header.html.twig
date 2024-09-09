@@ -1,0 +1,58 @@
+<div
+	class="col-auto">
+
+	{# HEADING #}
+	<h1 class="display-5 fw-bolder text-dark">
+		{% block header_title %}
+			{{ page_title | default('PAGE_TITLE') }}
+		{% endblock %}
+	</h1>
+
+	{# CONTENT #}
+	{% set avatar = avatar_provider.getCurrentUserAvatar() %}
+	<div class="avatar avatar-xxl mt-4">
+		{% if avatar and avatar.name %}
+			<img src="{{ asset('uploads/img/avatars/' ~ avatar.name) }}" alt="Avatar de {{ app.user.pseudo }}" class="avatar-img rounded-circle">
+		{% else %}
+			<img src="{{ asset('build/img/avatar/avatar.png') }}" alt="Avatar par défaut" class="avatar-img rounded-circle">
+		{% endif %}
+	</div>
+
+	<p class="fs-lg text-dark-75 mb-0 mt-4">
+		{{ app.user.pseudo }}
+		-
+		{{ app.user.email }}
+	</p>
+
+	<p class="fs-lg text-dark-75 mb-0">
+		{% set displayRole = 'Utilisateur' %}
+		{% set stopLoop = false %}
+		{% for role in app.user.roles %}
+			{% if stopLoop %}
+				{% else %}
+					{% if role == 'ROLE_ADMIN' %}
+						{% set displayRole = 'Administrateur' %}
+						{% set stopLoop = true %}
+					{% elseif role == 'ROLE_EVOCATI' %}
+						{% set displayRole = 'Evocati' %}
+					{% endif %}
+			{% endif %}
+		{% endfor %}
+		{{ displayRole }}
+	</p>
+
+</div>
+
+{# BUTTON #}
+<div class="col-auto mt-4 mb-mt-0">
+
+	{% if is_granted('ROLE_EVOCATI') %}
+		<a class="pc-dw me-6" href="{{ path ('admin_request')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Admin Area">
+			<i class="fa-solid fa-user-shield fa-2xl"></i>
+		</a>
+	{% endif %}
+	<a class="pc-dw" href="{{ path ('security_logout', {'_csrf_token': csrf_token('logout')}) }}" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Deconnexion">
+		<i class="fa-solid fa-right-from-bracket fa-2xl"></i>
+	</a>
+
+</div>

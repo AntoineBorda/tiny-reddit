@@ -1,0 +1,50 @@
+{# TOP #}
+<h2 class="mb-0 fw-bold text-center">
+	Se connecter
+</h2>
+<p class="mb-6 text-center">
+	Connectez-vous pour accéder à toutes les fonctionnalités de l'application.
+</p>
+
+{# FORM #}
+<form action="{{ path('security_login') }}" method="post">
+	<div class="form-group">
+		<label class="visually-hidden" for="username">
+			Votre email
+		</label>
+		<input type="email" class="form-control form-control-sm bg-dark border-primary mb-2" id="username" name="_username" value="{{ last_username }}" placeholder=" votre email">
+	</div>
+	<div class="form-group mb-5">
+		<label class="visually-hidden" for="password">
+			Votre mot de passe
+		</label>
+		<input type="password" class="form-control form-control-sm bg-dark border-primary mb-2" id="password" name="_password" placeholder="Votre mot de passe">
+	</div>
+	<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+	<div class="form-group form-check mb-5">
+		<input type="checkbox" class="form-check-input" id="remember_me" name="_remember_me">
+		<label class="form-check-label" for="_remember_me">
+			Se souvenir de moi
+		</label>
+	</div>
+	<button class="btn w-100 btn-primary" type="submit">
+		Se connecter
+	</button>
+</form>
+
+{# ERRORS #}
+{% if error %}
+	<div class="form-group-errors">
+		<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+	</div>
+{% endif %}
+
+{# BOTTOM #}
+<p class="mt-6 fs-sm text-center">
+	Pas encore de compte?
+	<a class="text-primary" href="{{ path ('security_registration') }}">Créer un compte</a>.
+</p>
+<p class="mt-4 fs-sm text-center">
+	Vous avez oublié votre mot de passe?
+	<a class="text-primary" href="{{ path ('app_forgot_password_request') }}">Réinitialiser votre mot de passe</a>.
+</p>
